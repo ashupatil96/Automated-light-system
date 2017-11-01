@@ -97,7 +97,7 @@ timmer=timmer+1;
   //ldr end
   } else if(timmer>1500){
         //Serial.println("low");
-      tm=0;
+      timmer=0;
         digitalWrite(ledPinpir, LOW); // turn LED OFF
         digitalWrite(2, HIGH);
         digitalWrite(3, HIGH);
