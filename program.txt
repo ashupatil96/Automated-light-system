@@ -20,7 +20,7 @@ int pirStatepir = LOW;             // we start, assuming no motion detected
 
 //
 long duration, distance, RightSensor,LeftSensor;
-int flg_r=0,flg_l=0,cnt_in=0,cnt_out=0,tm=0;
+int flg_r=0,flg_l=0,cnt_in=0,cnt_out=0,timmer=0;
 int val=0;
 
 void setup()
@@ -46,7 +46,7 @@ pinMode(5, OUTPUT);
 void loop() {
 
 
-tm=tm+1;
+timmer=timmer+1;
 //Serial.println(tm);
 ///pir
   val = digitalRead(inputPinpir); 
@@ -95,7 +95,7 @@ tm=tm+1;
       }
       
   //ldr end
-  } else if(tm>1500){
+  } else if(timmer>1500){
         //Serial.println("low");
       tm=0;
         digitalWrite(ledPinpir, LOW); // turn LED OFF
