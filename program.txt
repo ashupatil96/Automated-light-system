@@ -105,7 +105,7 @@ timmer=timmer+1;
         digitalWrite(5, HIGH);
   }
   
-///
+////kdjfjjikskksddkkdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
   
 SonarSensor(trigPin1, echoPin1);
 RightSensor = distance;
